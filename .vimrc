@@ -18,7 +18,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'Raimondi/delimitMate'
-
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 """"""""""""""""""""""
