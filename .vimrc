@@ -56,7 +56,7 @@ set completeopt=menu,menuone    " Show popup menu, even if there is one entry
 set pumheight=10                " Completion window max size
 set nocursorcolumn              " Do not highlight column (speeds up highlighting)
 set nocursorline                " Do not highlight cursor (speeds up highlighting)
-set lazyredraw                  " Wait to redraw
+"set lazyredraw                  " Wait to redraw
 
 " Enable to copy to clipboard for operations like yank, delete, change and put
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
@@ -172,6 +172,8 @@ augroup END
 silent! map <F2> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
 
+" Below setting is to get rid of the esc key delays to render in vim-airline 
+set timeoutlen=1000 ttimeoutlen=0
 
 " build_go_files is a custom function that builds or compiles the test file.
 " It calls :GoBuild if its a Go file, or :GoTestCompile if it's a test file
